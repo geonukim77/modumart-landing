@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // 추가
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx", // react -> react-jsx로 변경
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true, // 추가
+    "isolatedModules": true // 추가
+  },
+  "include": [
+    "src"
+  ] // 추가
+}
