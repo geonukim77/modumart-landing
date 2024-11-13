@@ -86,7 +86,7 @@ export default function ModoMartLanding() {
 
 
                 <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-                    <div className="container px-4 md:px-6">
+                    <div className="container mx-auto px-4 md:px-6">
 
                         <div className="flex flex-col space-y-12 max-w-4xl mx-auto">
                             <div className="flex flex-col md:flex-row items-center gap-8">
