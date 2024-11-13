@@ -69,8 +69,8 @@ export default function ModoMartLanding() {
                             </div>
                             <div className="mt-12 flex justify-center">
                                 <img
-                                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q4LjcjAapfamsxPnHAmZy83O8BUtpl.jpg"
-                                    alt="모두의마트 앱을 사용하여 마트에서 쇼핑하는 모습"
+                                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cover2-nsft8uHRWFpJ4CniZhXZS1YC0gK19S.png"
+                                    alt="모두의마트 앱 소개 - 가격표 스캔으로 미리 계산해보세요"
                                     width={600}
                                     height={400}
                                     className="rounded-lg object-cover"
@@ -79,27 +79,67 @@ export default function ModoMartLanding() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
-                            주요 기능
-                        </h2>
-                        <div className="flex flex-col space-y-6 max-w-2xl mx-auto">
-                            <FeatureCard
-                                icon={<Calculator className="h-10 w-10 text-blue-500" />}
-                                title="간편한 마트 계산기"
-                                description="상품명과 가격을 쉽게 입력하여 총 금액을 미리 계산해보세요."
-                            />
-                            <FeatureCard
-                                icon={<Camera className="h-10 w-10 text-green-500" />}
-                                title="가격표 스캐너"
-                                description="가격표를 스캔하여 상품 정보를 빠르게 등록할 수 있습니다."
-                            />
-                            <FeatureCard
-                                icon={<Newspaper className="h-10 w-10 text-red-500" />}
-                                title="마트 전단지 모음"
-                                description="이마트, 트레이더스, 홈플러스, 코스트코 등의 전단지를 한 눈에 확인하세요."
-                            />
+
+                <h2 className="text-3xl md:text-4xl font-semibold text-center my-8">
+                    모두의마트 주요 기능
+                </h2>
+
+
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+                    <div className="container px-4 md:px-6">
+
+                        <div className="flex flex-col space-y-12 max-w-4xl mx-auto">
+                            <div className="flex flex-col md:flex-row items-center gap-8">
+                                <div className="flex-1">
+                                    <div>
+                                        <h3 className="text-xl font-bold mb-2">간편한 마트 계산기</h3>
+                                        <p className="text-gray-500">상품명과 가격을 쉽게 입력하여 금액을 미리 계산해보세요.</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <img
+                                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screensot1-o4GgJnQ6iEMeBTgkBWPlNYRxCASUwV.png"
+                                        alt="마트 계산기 스크린샷"
+                                        width={300}
+                                        height={400}
+                                        className="rounded-lg shadow-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div className="flex flex-col md:flex-row items-center gap-8">
+                                <div className="flex-1 order-2 md:order-1">
+                                    <img
+                                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screensot2-l4oteT7dvx3KA96BUmbGkoqlX3cGEP.png"
+                                        alt="가격표 스캐너 스크린샷"
+                                        width={300}
+                                        height={400}
+                                        className="rounded-lg shadow-lg"
+                                    />
+                                </div>
+                                <div className="flex-1 order-1 md:order-2">
+                                    <div>
+                                        <h3 className="text-xl font-bold mb-2">가격표 스캐너</h3>
+                                        <p className="text-gray-500">가격표를 스캔하여 상품 정보를 빠르게 등록할 수 있어요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-col md:flex-row items-center gap-8">
+                                <div className="flex-1">
+                                    <div>
+                                        <h3 className="text-xl font-bold mb-2">마트 전단지 모음</h3>
+                                        <p className="text-gray-500">이마트, 트레이더스, 홈플러스, 코스트코 등의 전단지를 한 눈에 확인하세요.</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <img
+                                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screensot3-eK0s9tNgQhTWqW2T2d9e381nmBJ9sO.png"
+                                        alt="마트 전단지 스크린샷"
+                                        width={300}
+                                        height={400}
+                                        className="rounded-lg shadow-lg"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
