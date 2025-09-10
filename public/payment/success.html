@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 - 모두마트</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://www.modumart.co.kr/payment/success.html" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-md mx-auto pt-20 px-4">
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+            <!-- 성공 아이콘 -->
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            
+            <h1 class="text-2xl font-bold text-gray-900 mb-2">결제가 완료되었습니다!</h1>
+            <p class="text-gray-600 mb-6">주문이 정상적으로 처리되었습니다.</p>
+            
+            <!-- 주문 정보 -->
+            <div class="bg-gray-50 rounded-xl p-4 mb-6 text-left">
+                <h3 class="font-semibold text-gray-900 mb-3">주문 정보</h3>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">주문번호</span>
+                        <span class="font-medium" id="orderId">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">결제수단</span>
+                        <span class="font-medium" id="paymentMethod">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">결제금액</span>
+                        <span class="font-medium text-indigo-600" id="amount">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-3">
+                <button 
+                    onclick="window.close()" 
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition"
+                >
+                    확인
+                </button>
+                <button 
+                    onclick="window.location.href='/'" 
+                    class="w-full border border-gray-300 text-gray-700 py-3 rounded-lg font-medium hover:bg-gray-50 transition"
+                >
+                    쇼핑 계속하기
+                </button>
+            </div>
+            
+            <div class="mt-6 text-xs text-gray-500">
+                <p>📧 결제 확인 메일이 발송되었습니다.</p>
+                <p>📦 1-2일 내 배송 예정입니다.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // URL 파라미터에서 결제 정보 가져오기
+        const urlParams = new URLSearchParams(window.location.search);
+        const orderId = urlParams.get('orderId');
+        const amount = urlParams.get('amount');
+        const paymentKey = urlParams.get('paymentKey');
+        const paymentType = urlParams.get('paymentType');
+        
+        // 결제 정보 표시
+        if (orderId) document.getElementById('orderId').textContent = orderId;
+        if (amount) document.getElementById('amount').textContent = parseInt(amount).toLocaleString() + '원';
+        
+        // 결제수단 표시 (실제로는 서버에서 결제 승인 API 호출 후 받아와야 함)
+        document.getElementById('paymentMethod').textContent = '토스페이먼츠';
+        
+        // 실제 서비스에서는 여기서 서버로 결제 승인 API 호출
+        console.log('결제 성공 파라미터:', {
+            orderId,
+            amount,
+            paymentKey,
+            paymentType
+        });
+    </script>
+</body>
+</html>

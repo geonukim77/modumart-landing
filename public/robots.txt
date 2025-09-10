@@ -1,3 +1,15 @@
 User-agent: *
 Allow: /
+
+# Sitemaps
 Sitemap: https://www.modumart.co.kr/sitemap.xml
+
+# RSS Feed
+# https://www.modumart.co.kr/rss.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin or private paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
