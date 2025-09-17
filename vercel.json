@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "routes": [
+    { "src": "/payment/(success|fail)\\.html", "status": 410 },
+    { "src": "/payment/(success|fail)$", "status": 410 }
+  ]
+}

@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
+# Prevent indexing of parameter-based internal search results
+Disallow: /*?search=
+
 # Sitemaps
 Sitemap: https://www.modumart.co.kr/sitemap.xml
 
