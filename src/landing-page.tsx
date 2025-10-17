@@ -173,7 +173,7 @@ export default function ModoMartLanding() {
               </div>
               <div className="space-y-2">
                 <div><span className="font-semibold">주소:</span> 경기도 파주시 교하로 100, 910동 104호</div>
-                <div><span className="font-semibold">전화번호:</span> 050-6724-3619</div>
+                <div><span className="font-semibold">전화번호:</span> 010-6707-3619</div>
                 <div><span className="font-semibold">이메일:</span> <a href="mailto:er4t@naver.com" className="text-indigo-600 hover:underline">er4t@naver.com</a></div>
               </div>
             </div>
